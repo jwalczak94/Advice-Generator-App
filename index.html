@@ -17,7 +17,7 @@
     />
     <link rel="stylesheet" href="./src/output.css" />
     <title>Frontend Mentor | Advice generator app</title>
-    <script defer src="/src/script.js"></script>
+    <script defer src="./src/script.js"></script>
   </head>
   <body class="bg-darkBlue text-lightCyan font-manrope">
     <main class="mx-auto px-4 md:px-0 grid place-content-center h-full">
@@ -26,21 +26,23 @@
         class="bg-darkGrayishBlue max-w-[33.75rem] flex flex-col items-center gap-6 relative rounded-xl pt-10 px-6 pb-16 text-center md:pt-12 md:px-12 md:pb-[4.5rem] md:rounded-2xl"
       >
         <p
-          class="text-neonGreen uppercase font-medium text-[11px] leading-none tracking-[0.3em] md:text-[13px]"
+          class="text-neonGreen uppercase font-medium text-[11px] tracking-[0.3em] md:text-[13px]"
         >
           Advice #
           <span class="advice-number">117</span>
         </p>
-        <blockquote class="quote font-extrabold text-2xl"></blockquote>
+        <blockquote
+          class="quote font-extrabold text-2xl md:text-[1.75rem] leading-[1.35]"
+        ></blockquote>
         <img
           src="./src/images/pattern-divider-mobile.svg"
           aria-label=""
           aria-hidden="true"
-          class="divider"
+          class="divider md:mt-4"
         />
         <button
           aria-label="Click here to generate a new advice!"
-          class="btn h-16 w-16 rounded-full grid place-content-center bg-neonGreen absolute -bottom-8 hover:shadow-sm duration-200"
+          class="btn h-16 w-16 rounded-full grid place-content-center bg-neonGreen absolute -bottom-8 duration-200"
         >
           <svg
             class="fill-darkBlue"

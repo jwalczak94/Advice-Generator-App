@@ -17,7 +17,7 @@ class AdviceGenerator {
     btn.addEventListener("click", this._generateRandomNumber);
 
     // init advice
-    this._generateRandomNumber();
+    this._generateRandomAdvice(1);
   }
 
   _updateImageSrc() {

@@ -12,3 +12,11 @@
     @apply text-red-400 font-semibold text-xl px-4;
   }
 }
+
+@layer components {
+  @media (hover: hover) {
+    .btn:hover {
+      @apply shadow-sm;
+    }
+  }
+}
