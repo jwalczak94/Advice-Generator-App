@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply h-full;
+  }
+
+  blockquote > span {
+    @apply text-red-400 font-semibold text-xl px-4;
+  }
+}

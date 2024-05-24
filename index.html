@@ -1,28 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Advice generator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Advice #<!-- Advice ID goes here -->
-
-  "<!-- Advice text goes here -->"
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>Frontend Mentor | Advice generator app</title>
+    <script defer src="/src/script.js"></script>
+  </head>
+  <body class="bg-darkBlue text-lightCyan font-manrope">
+    <main class="mx-auto px-4 md:px-0 grid place-content-center h-full">
+      <h1 class="sr-only">Hello, this is an advice generator app!</h1>
+      <div
+        class="bg-darkGrayishBlue max-w-[33.75rem] flex flex-col items-center gap-6 relative rounded-xl pt-10 px-6 pb-16 text-center md:pt-12 md:px-12 md:pb-[4.5rem] md:rounded-2xl"
+      >
+        <p
+          class="text-neonGreen uppercase font-medium text-[11px] leading-none tracking-[0.3em] md:text-[13px]"
+        >
+          Advice #
+          <span class="advice-number">117</span>
+        </p>
+        <blockquote class="quote font-extrabold text-2xl"></blockquote>
+        <img
+          src="./src/images/pattern-divider-mobile.svg"
+          aria-label=""
+          aria-hidden="true"
+          class="divider"
+        />
+        <button
+          aria-label="Click here to generate a new advice!"
+          class="btn h-16 w-16 rounded-full grid place-content-center bg-neonGreen absolute -bottom-8 hover:shadow-sm duration-200"
+        >
+          <svg
+            class="fill-darkBlue"
+            width="24"
+            height="24"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path
+              d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"
+            />
+          </svg>
+        </button>
+      </div>
+    </main>
+    <footer
+      class="text-xs text-grayishBlue font-medium text-center my-3 flex flex-col gap-2 justify-center absolute bottom-0 w-full"
+    >
+      <p>
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db"
+          target="_blank"
+          class="text-lightCyan font-bold"
+        >
+          Frontend Mentor.
+        </a>
+      </p>
+      <p>
+        Coded by
+        <a
+          href="https://www.frontendmentor.io/profile/jwalczak94"
+          target="_blank"
+          class="text-neonGreen font-bold"
+        >
+          Joanna.
+        </a>
+      </p>
+    </footer>
+  </body>
 </html>
